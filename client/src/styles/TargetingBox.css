@@ -1,0 +1,81 @@
+.targeting-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  padding: 15px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.targeting-circle {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ff6b6b;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  position: relative;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.targeting-circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 20px;
+  background: #ff6b6b;
+}
+
+.targeting-circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background: #ff6b6b;
+}
+
+.character-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 120px;
+}
+
+.character-option {
+  padding: 10px 15px;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.character-option:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.character-option:active {
+  transform: translateY(0);
+}

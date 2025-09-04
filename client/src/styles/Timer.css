@@ -1,0 +1,22 @@
+.timer {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-label {
+  font-weight: 600;
+  color: #495057;
+  margin-right: 5px;
+}
+
+.timer-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  min-width: 50px;
+}
